@@ -1,0 +1,351 @@
+<!-- a. СМОТРИ template.png
+b. Классы НАЗЫВАЕМ по смыслу.
+
+ЗАДАНИЕ 1. Создай класс links для ссылок в шапке.
+	а. Создай класс links.
+	b. Вырежи свойства из атрибута style и добавь их классу links.
+	c. Добавь атрибут class со значением "links" ссылкам.
+
+ЗАДАНИЕ 2. Создай класс header для 4-х заголовков: Новинки, Популярные и т.д.
+	а. Создай класс header.
+	b. Вырежи свойства из атрибута style и добавь их классу header.
+	c. Добавь атрибут class со значением "header" h2.
+
+ЗАДАНИЕ 3. Создай класс row для дивов 4-х дивов строк.
+    a. Создай класс row.
+	b. Вырежи свойства из атрибута style и добавь их классу row.
+	c. Добавь атрибут class со значением "row" дивам строкам.
+
+ЗАДАНИЕ 4. Создай класс movie_block для дивов фильмов.
+    a. Создай класс movie_block.
+	b. Вырежи свойства из атрибута style и добавь их классу movie_block.
+	c. Добавь атрибут class со значением "movie_block" дивам фильмам.
+
+ЗАДАНИЕ 5. Создай класс text_yellow для всего желтого текста в коде.
+	а. Создай класс text_yellow.
+	b. Вырежи свойства из атрибута style и добавь их классу text_yellow.
+	c. Добавь атрибут class со значением "text_yellow" тегам с ценой.
+
+ЗАДАНИЕ 6. Создай класс button для всех кнопок в коде.
+	а. Создай класс button.
+	b. Вырежи свойства из атрибута style и добавь их классу button.
+	c. Добавь атрибут class со значением "button" тегам кнопки.
+
+ЗАДАНИЕ 7. Создай класс movie_image для всех картинок в коде.
+	а. Создай класс movie_image.
+	b. Вырежи свойства из атрибута style и добавь их классу movie_image.
+	c. Добавь атрибут class со значением "movie_image" img внутри дивов фильмов.
+-->
+
+<style>
+
+    /* главный блок */
+    .main {
+        height: 60px;
+        background: black;
+        width: 1920px; 
+        height: 2400px; 
+        background: #1f1f1f; 
+        margin-left: auto; 
+        margin-right: auto; 
+        font-family: 'Comic Sans MS';
+    }
+
+    /* навигация */
+    .navigation {
+        width: 1920px; 
+        height: 100px; 
+        margin-left: auto; 
+        margin-right: auto;
+        display: flex;
+    }
+
+    .logo_container {
+        width: 300px; 
+        height: 100px; 
+        margin-right: 310px;
+    }
+
+    .logo {
+        margin-top: 32px; 
+        margin-left: 90px;
+    }
+
+    .link_container {
+        width: 700px; 
+        height: 66px; 
+        padding-top: 34px; 
+        margin-right: 260px; 
+        text-align: center; 
+    }
+
+    .actions_container {
+        width: 350px; 
+        height: 100px; 
+        display: flex;
+    }
+
+    .install_tv_container {
+        width: 280px; 
+        height: 66px; 
+        padding-top: 34px; 
+        margin-right: 20px;
+    }
+
+    .profile_container {
+        width: 50px; 
+        height: 50px; 
+        margin-top: 25px;
+    }
+
+    .profile {
+        width: 50px;
+    }
+
+    /* баннер */
+    .banner {
+        width: 1920px; 
+        height: 550px; 
+        margin-left: auto; 
+        margin-right: auto;  
+        background: url('bg.png');
+    }
+
+    .banner_text_container {
+        width: 1000px; 
+        height: 150px; 
+        padding-top: 150px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        text-align: center;
+    }
+
+    .banner_header {
+        margin: 0; 
+        color: #F7F7F7; 
+        font-size: 48px;
+        transition: 0.7s;
+    }
+
+    .banner_text {
+        font-size: 24px; 
+        color: #fff;
+        transition: 0.7s;
+    }
+
+    /* скелет блока фильмов */
+
+    .skeleton {
+        width: 1600px; 
+        height: 1700px; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    /* КЛАССЫ СОЗДАЕМ ЗДЕСЬ */
+
+    .links {
+        color: white; 
+        font-size: 24px; 
+        margin-right: 35px;
+    }
+    .button{
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+        padding-left: 60px; 
+        padding-right: 60px; 
+        background: blue; 
+        border: none; 
+        font-size: 12px;
+        transition: 0.7s;
+    }
+    .header{
+        color: orange; 
+        font-size: 30px;
+        transition: 0.7s;
+    }
+    .text_yellow{
+        color: green;
+        transition: 0.7s;
+    }
+    .row{
+        width: 1600px;
+        height: 310px; 
+        margin-bottom: 40px;  
+        display: flex;
+            }
+    .movie_block{
+        width: 345px; 
+        height: 310px; 
+        margin-right: 30px;
+
+        text-align: center;
+    }
+    .movie_image{
+    width: 270px; height: 270px;
+    }
+    .button:hover{
+        background: white;
+    }
+    .text_yellow:hover{
+        color: yellow;
+    }
+    .header:hover{
+        color: red;
+    }
+    .banner_text:hover{
+        color: green;
+    }
+    .banner_header:hover{
+        color: red;
+    }
+   
+</style>
+ 
+<!-- 1 уровень -->   
+<div class="main">
+	<!-- 2 уровень -->
+	<!-- ШАПКА -->
+    <div class="navigation">
+        <div class="logo_container">
+            <img src="logo.svg" class="logo"/>
+        </div>
+        <div class="link_container">
+            <a href="#" class="links">Мое кино</a>
+            <a href="#" class="links">Магазин</a>
+            <a href="#" class="links">Буду смотреть</a>
+            <a href="#" class="links">Покупки</a>
+        </div>
+        <div class="actions_container">
+            <div class="install_tv_container">
+                <a href="#" class="links">
+                    Установить на ТВ    
+                </a>
+            </div>
+            <div class="profile_container">
+                <img src="profile.png" class="profile"/>
+            </div>
+        </div>
+    </div>
+    <!-- БАННЕР -->
+    <div class="banner">
+        <div class="banner_text_container">
+            <h1 class="banner_header">Миллиарды</h1>
+            <p class="banner_text">Миллиардер против прокурора — большие люди, большие деньги, большие проблемы. Для фанатов «Карточного домика»</p>
+        </div>
+    </div>
+    <div class="skeleton">
+        <h2 class="header">Новинки</h2>
+        <!-- див строка -->
+        <div class="row">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img class="movie_image"src="https://photo.tvigle.ru/crop/245x350/res/tvigle/product/2021/11/26/77be9b92-aa98-4bb5-8958-299fc86926af.jpg">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://st.kloomba.com/img/club/2015/11/21/276429-76a58830.jpg" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://www.megacritic.ru/media/reviews/photos/thumbnail/640x640s/19/3a/81/906042-45-1513621231.jpg" class="movie_image">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://thumbs.dfs.ivi.ru/storage9/contents/a/2/57a24077822208929f45d401ae8117.jpg" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+        </div>
+        <h2 class="header">Популярные</h2>
+		<!-- див строка -->
+        <div class="row">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKzS5USvcoPAPmtsL9FI107pPzequF6fmz7-3Yxurh_kgM4-6rZwbZ2yr3GwUwQ9VmuM&usqp=CAU" class="movie_image">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5vvM5dWAZdkpzU4FM2fSMySjSkqQIlkgZdA&usqp=CAU" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7EJHezBTcnJ_OCOVDnUUoJzaVOBtnEd85eg&usqp=CAU" class="movie_image">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://konkretno.ru/uploads/posts/2021-06/1623174375_deviataev.jpg" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+        </div>
+        <h2 class="header">Выбираем сегодня</h2>
+		<!-- див строка -->
+        <div class="row">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/84497812-6b3c-48b1-88e8-b0d7cdf5e1f2/600x900" class="movie_image">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://cs13.pikabu.ru/post_img/2023/02/06/3/1675649763185920542.jpg" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://thumbs.dfs.ivi.ru/storage39/contents/f/9/48f71334c5c8685e5ee6d070a72387.jpg" class="movie_image">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://b1.filmpro.ru/c/206814.492x694.jpg" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+        </div>
+        <h2 class="header">В тренде: приключения</h2>
+		<!-- див строка -->
+        <div class="row">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img class="movie_image"src="https://upload.wikimedia.org/wikipedia/ru/f/fc/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B1%D1%8B%D0%BB%D1%8C_%282021%2C_%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%29.jpg">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://thumbs.dfs.ivi.ru/storage38/contents/3/0/f3fe07dead135fe0acc74948ca7bd7.jpg" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://b1.filmpro.ru/c/819801.jpg" class="movie_image">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599$</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/c/c5/The_Descent_movie_poster.jpg" class="movie_image">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599$</div>
+            </div>
+        </div>
+    </div>
+</div>
